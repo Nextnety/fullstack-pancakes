@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <title>CSS Cheat Sheet</title>
+    </head>
+    <body>
+        <table>
+            <caption class="table-caption">
+                <h1>CSS Layout: Position Property</h1>
+            </caption>
+            <thead>
+                <tr class="table-headings">
+                    <th>Position Properties</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-items">
+                    <td>Static</td>
+                    <td>
+                        Default postion. Not affected by top, bottom, left,
+                        right properties. Positioned to normal flow of page
+                    </td>
+                    <td>
+                        #sticky { position: static; border: 1px, solid, blue }
+                    </td>
+                </tr>
+                <tr class="table-items">
+                    <td>Relative</td>
+                    <td>
+                        Element is positioned relative to its normal position.
+                        Position adjustments of top, right, bottom and left
+                        properties cause item to be adjusted away from normal
+                        position. Other content will not be affected to fill any
+                        gap left behind.
+                    </td>
+                    <td>
+                        div.relative {position: relative; right 30px, border:
+                        3px solid black}
+                    </td>
+                </tr>
+                <tr class="table-items">
+                    <td>Fixed</td>
+                    <td>
+                        Positioned relative to the viewport. Position stays in
+                        same place even if screen is scrolled. Can be adjusted
+                        by top, right, bottom and left properties. Does not
+                        leave a gap in the page when moved.
+                    </td>
+                    <td>
+                        div.fixed { position: fixed; bottom: 10; right: 50;
+                        width: 200px; border: 3px solid gray; }
+                    </td>
+                </tr>
+                <tr class="table-items">
+                    <td>Absolute</td>
+                    <td>
+                        Positioned relative to the nearest ancestor, not the
+                        viewport as fixed is. If no ancestors, it uses the
+                        document body and moves with page scrolling. Elements
+                        are removed from the noraml flow and can overlap other
+                        elements.
+                    </td>
+                    <td>
+                        div.relative { position: relative; width: 400px; height:
+                        200px; border: 2px solid blue;
+                    </td>
+                </tr>
+                <tr class="table-items">
+                    <td>Sticky</td>
+                    <td>
+                        Elements positioned based on user's scroll position.
+                        Toggles between relative and fixed depending on scroll
+                        position. Is positioned relative until a given offset
+                        position is met in the viewport - then it "sticks" in
+                        place (like position:fixed.
+                    </td>
+                    <td>
+                        div.sticky { position: -webkit-sticky; /* Safari */
+                        position: sticky; top: 0; background-color: green;
+                        border: 2px solid gray; }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption class="table-caption">
+                <h1>All CSS Positioning Properties</h1>
+            </caption>
+            <thead>
+                <tr class="table-headings">
+                    <th>Position Properties</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-items">
+                    <td>bottom</td>
+                    <td>Sets the bottom margin edge for a positioned box</td>
+                </tr>
+                <tr class="table-items">
+                    <td>clip</td>
+                    <td>Clips an absolutely positioned element</td>
+                </tr>
+                <tr class="table-items">
+                    <td>left</td>
+                    <td>Sets the left margin edge for a positioned box</td>
+                </tr>
+                <tr class="table-items">
+                    <td>position</td>
+                    <td>Specifies the type of positioning for an element</td>
+                </tr>
+                <tr class="table-items">
+                    <td>right</td>
+                    <td>Sets the right margin edge for a positioned box</td>
+                </tr>
+                <tr class="table-items">
+                    <td>top</td>
+                    <td>Sets the top margin edge for a positioned box</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
